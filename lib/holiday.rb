@@ -53,10 +53,10 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each { |name, holidays|
     puts "#{name.capitalize}:"
     holidays.each {|holiday, supplies|
-      puts "#{holiday.capitalize}: #{suppliesflatten}"
+      puts "#{holiday.capitalize}: #{supplies}"
     }
+    binding.pry
   }
-  binding.pry
   # iterate through holiday_hash and print items such that your readout resembles:
   # Winter:
   #   Christmas: Lights, Wreath
